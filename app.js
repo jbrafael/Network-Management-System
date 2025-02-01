@@ -1,4 +1,6 @@
 const express = require('express');
+const path = require('path'); // Importa o módulo path
+
 const app = express();
 const port = 3000;
 
@@ -6,9 +8,9 @@ const port = 3000;
 app.use(express.static('public'));
 app.use(express.json());
 
-// Rota de teste
+// Rota para servir o index.html
 app.get('/', (req, res) => {
-  res.send('Network-Management-System está funcionando!');
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // Iniciar o servidor

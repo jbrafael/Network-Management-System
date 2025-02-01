@@ -1,7 +1,6 @@
 {
   "name": "network-management-system",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js"
@@ -14,6 +13,11 @@
     "mysql2": "^3.1.9"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
-  }
+    "autoprefixer": "^10.4.20",
+    "nodemon": "^3.1.9",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^4.0.2"
+  },
+  "keywords": [],
+  "description": ""
 }

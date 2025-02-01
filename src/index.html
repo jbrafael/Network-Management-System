@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Management System</title>
+    <link rel="stylesheet" href="/src/styles.css">
+    <link href="dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-800 text-white font-sans">
+
+    <!-- Sidebar -->
+    <div class="flex h-screen">
+        <div class="w-64 bg-gray-900 p-5">
+            <h2 class="text-xl font-bold text-center text-blue-500">NMS</h2>
+            <ul class="mt-6">
+                <li class="py-2 hover:bg-gray-700 px-3">
+                    <a href="#">Dashboard</a>
+                </li>
+                <li class="py-2 hover:bg-gray-700 px-3">
+                    <a href="#">Dispositivos</a>
+                </li>
+                <li class="py-2 hover:bg-gray-700 px-3">
+                    <a href="#">Configurações de Rede</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 p-6">
+            <h1 class="text-2xl font-semibold">Dashboard de Rede</h1>
+            <div class="grid grid-cols-3 gap-6 mt-6">
+                <!-- Card de Status de Rede -->
+                <div class="bg-gray-700 p-4 rounded-md shadow-md">
+                    <h3 class="font-bold text-lg">Status da Rede</h3>
+                    <p>Status: <span class="text-green-500">Ativa</span></p>
+                    <p>Conexões: 120</p>
+                    <p>Ping: 20ms</p>
+                </div>
+
+                <!-- Card de Dispositivos -->
+                <div class="bg-gray-700 p-4 rounded-md shadow-md">
+                    <h3 class="font-bold text-lg">Dispositivos Conectados</h3>
+                    <p>Total: 50</p>
+                    <p>Online: 48</p>
+                    <p>Offline: 2</p>
+                </div>
+
+                <!-- Card de Utilização de Banda -->
+                <div class="bg-gray-700 p-4 rounded-md shadow-md">
+                    <h3 class="font-bold text-lg">Utilização de Banda</h3>
+                    <p>Download: 80 Mbps</p>
+                    <p>Upload: 40 Mbps</p>
+                </div>
+            </div>
+
+            <!-- Gráfico de Rede -->
+            <div class="mt-8">
+                <h3 class="text-xl font-semibold">Gráfico de Tráfego de Rede</h3>
+                <!-- Gráfico pode ser inserido aqui com uma biblioteca como Chart.js -->
+                <canvas id="networkTrafficChart" width="400" height="200"></canvas>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
